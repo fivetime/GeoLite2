@@ -1,5 +1,6 @@
 . config.sh
 source config.sh
+rm -rvf GeoLite2-*
 
 wget -c "$Server?edition_id=GeoLite2-ASN&license_key=$ApiKey&suffix=tar.gz" -O GeoLite2-ASN.tar.gz
 wget -c "$Server?edition_id=GeoLite2-ASN&license_key=$ApiKey&suffix=tar.gz.sha256" -O GeoLite2-ASN.tar.gz.sha256
